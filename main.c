@@ -17,6 +17,11 @@ void main()
 		printf("ERROR !. Please type a acceptable value of time\n");
 		exit(0);
 	}
+
+	/* Use __TIME__
+time use korle ar manually time nite hobe na atuo time genetare hoeb
+scanf er poriborte __TIME__ use korte hobe next update e */
+
 	while (1)
 	{
 		s++;
