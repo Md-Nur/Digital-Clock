@@ -1,4 +1,6 @@
-//Digital Colock project
+/*             Digital Colock project 1.0.1           */
+
+// Use __TIME__ time use korle ar manually time nite hobe na atuo time genetare hoeb scanf er poriborte __TIME__ use korte hobe next update e try for stop watch
 
 #include <stdio.h>
 // #include <math.h>
@@ -10,17 +12,13 @@
 void main()
 {
 	int h, m, s;
-	printf("Set time: \n");
+	printf("+-+-+-+-+-+-+-+-+ Digital Clock +-+-+-+-+-+-+-+-\nSet time: ");
 	scanf("%d %d %d", &h, &m, &s);
 	if (h > 12 || m > 60 || s > 60)
 	{
 		printf("ERROR !. Please type a acceptable value of time\n");
 		exit(0);
 	}
-
-	/* Use __TIME__
-time use korle ar manually time nite hobe na atuo time genetare hoeb
-scanf er poriborte __TIME__ use korte hobe next update e */
 
 	while (1)
 	{
@@ -39,8 +37,8 @@ scanf er poriborte __TIME__ use korte hobe next update e */
 		{
 			h = 0;
 		}
-		printf("\n Clock : ");
-		printf("\n %d : %d : %d", h, m, s);
+		printf("\n+-+-+-+-+-+-+-+-+ Digital Clock +-+-+-+-+-+-+-+-\n");
+		printf("%d : %d : %d", h, m, s);
 		Sleep(1000);
 		system("cls");
 	}
